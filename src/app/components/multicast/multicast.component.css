@@ -1,0 +1,11 @@
+div {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background: lightgreen;
+  height: 50px;
+  font-style: normal;
+  font-family: Arial;
+}

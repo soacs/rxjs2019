@@ -1,0 +1,16 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background: greenyellow;
+  height: 100px;
+  font-style: normal;
+  font-family: Arial;
+}
+
+button {
+  padding: 2px;
+}
