@@ -1,16 +1,40 @@
 div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around  !important;
   justify-items: center;
   justify-content: center;
   align-items: center;
-  background: greenyellow;
-  height: 100px;
+  background: lightblue;
+  height: 500px;
   font-style: normal;
-  font-family: Arial;
+  font-family: Arial, serif;
 }
 
+div #block1 {
+  background-color: lightsalmon;
+  width: 400px;
+  height: 200px;
+}
+
+div #block2 {
+  background-color: lightpink;
+  height: 200px;
+  width: 400px;
+}
+
+div #block3 {
+  background-color: lightgreen;
+  width: 400px;
+  height: 200px;
+}
+
+
 button {
-  padding: 2px;
+  padding: 4px;
+}
+
+span {
+  padding: 4px;
+  width: 300px;
 }

@@ -1,9 +1,12 @@
 div {
-    padding: 0px;
+  padding: 0px;
+  font-style: normal;
+  font-family: Arial, serif; /* You can add global styles to this file, and also import other style files */
+
 }
 
 h1 {
-  padding:0px;
+  padding: 0px;
   margin: 0px;
 }
 

@@ -1,5 +1,19 @@
-<div>
-  intro works!
-  <br>
-  <span>Click Me</span>
+<div flexLayout>
+  <h1>Introduction to RxJS</h1>
+  <div id="block1">
+    <button (click)="values()">Show Values</button>
+    <span> Mouse Click - <i>event.clientX</i></span>
+    <span> values: {{ obs | async}} </span>
+  </div>
+  <div id="block2">
+    <button (click)="purity()">Show Purity</button>
+    <span> Number of Accumulated Clicks:</span>
+    <span> count: {{ count | async}} </span>
+  </div>
+  <div id="block3">
+    <button (click)="flow()">Show Flow</button>
+    <span> Throttle clicks for 5 seconds:</span>
+    <span> count: {{ flowCount | async}} </span>
+  </div>
+
 </div>
