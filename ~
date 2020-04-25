@@ -1,0 +1,89 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	modified:   angular.json
+#	renamed:    src/browserslist -> browserslist
+#	modified:   package.json
+#	new file:   src/app/components/application/app.component.css
+#	new file:   src/app/components/application/app.component.html
+#	new file:   src/app/components/application/app.component.spec.ts
+#	new file:   src/app/components/application/app.component.ts
+#	new file:   src/app/components/async/async.component.css
+#	new file:   src/app/components/async/async.component.html
+#	new file:   src/app/components/async/async.component.spec.ts
+#	new file:   src/app/components/async/async.component.ts
+#	new file:   src/app/components/behavior/behavior.component.css
+#	new file:   src/app/components/behavior/behavior.component.html
+#	new file:   src/app/components/behavior/behavior.component.spec.ts
+#	new file:   src/app/components/behavior/behavior.component.ts
+#	new file:   src/app/components/combinations/combinations.component.css
+#	new file:   src/app/components/combinations/combinations.component.html
+#	new file:   src/app/components/combinations/combinations.component.spec.ts
+#	new file:   src/app/components/combinations/combinations.component.ts
+#	new file:   src/app/components/completions/completions.component.css
+#	new file:   src/app/components/completions/completions.component.html
+#	new file:   src/app/components/completions/completions.component.spec.ts
+#	new file:   src/app/components/completions/completions.component.ts
+#	new file:   src/app/components/conditionals/conditionals.component.css
+#	new file:   src/app/components/conditionals/conditionals.component.html
+#	new file:   src/app/components/conditionals/conditionals.component.spec.ts
+#	new file:   src/app/components/conditionals/conditionals.component.ts
+#	new file:   src/app/components/creation/creation.component.css
+#	new file:   src/app/components/creation/creation.component.html
+#	new file:   src/app/components/creation/creation.component.spec.ts
+#	new file:   src/app/components/creation/creation.component.ts
+#	new file:   src/app/components/errorhandling/errorhandling.component.css
+#	new file:   src/app/components/errorhandling/errorhandling.component.html
+#	new file:   src/app/components/errorhandling/errorhandling.component.spec.ts
+#	new file:   src/app/components/errorhandling/errorhandling.component.ts
+#	new file:   src/app/components/filters/filters.component.css
+#	new file:   src/app/components/filters/filters.component.html
+#	new file:   src/app/components/filters/filters.component.spec.ts
+#	new file:   src/app/components/filters/filters.component.ts
+#	new file:   src/app/components/intro/intro.component.css
+#	new file:   src/app/components/intro/intro.component.html
+#	new file:   src/app/components/intro/intro.component.spec.ts
+#	new file:   src/app/components/intro/intro.component.ts
+#	new file:   src/app/components/mathematical/mathematical.component.css
+#	new file:   src/app/components/mathematical/mathematical.component.html
+#	new file:   src/app/components/mathematical/mathematical.component.spec.ts
+#	new file:   src/app/components/mathematical/mathematical.component.ts
+#	new file:   src/app/components/multicast/multicast.component.css
+#	new file:   src/app/components/multicast/multicast.component.html
+#	new file:   src/app/components/multicast/multicast.component.spec.ts
+#	new file:   src/app/components/multicast/multicast.component.ts
+#	new file:   src/app/components/observers/observers.component.css
+#	new file:   src/app/components/observers/observers.component.html
+#	new file:   src/app/components/observers/observers.component.spec.ts
+#	new file:   src/app/components/observers/observers.component.ts
+#	new file:   src/app/components/operators/operators.component.css
+#	new file:   src/app/components/operators/operators.component.html
+#	new file:   src/app/components/operators/operators.component.spec.ts
+#	new file:   src/app/components/operators/operators.component.ts
+#	new file:   src/app/components/replay/replay.component.css
+#	new file:   src/app/components/replay/replay.component.html
+#	new file:   src/app/components/replay/replay.component.spec.ts
+#	new file:   src/app/components/replay/replay.component.ts
+#	new file:   src/app/components/scheduler/scheduler.component.css
+#	new file:   src/app/components/scheduler/scheduler.component.html
+#	new file:   src/app/components/scheduler/scheduler.component.spec.ts
+#	new file:   src/app/components/scheduler/scheduler.component.ts
+#	new file:   src/app/components/subjects/subjects.component.css
+#	new file:   src/app/components/subjects/subjects.component.html
+#	new file:   src/app/components/subjects/subjects.component.spec.ts
+#	new file:   src/app/components/subjects/subjects.component.ts
+#	new file:   src/app/components/transformations/transformations.component.css
+#	new file:   src/app/components/transformations/transformations.component.html
+#	new file:   src/app/components/transformations/transformations.component.spec.ts
+#	new file:   src/app/components/transformations/transformations.component.ts
+#	new file:   src/app/components/utility/utility.component.css
+#	new file:   src/app/components/utility/utility.component.html
+#	new file:   src/app/components/utility/utility.component.spec.ts
+#	new file:   src/app/components/utility/utility.component.ts
+#	modified:   src/polyfills.ts
+#	modified:   src/tsconfig.app.json
+#	modified:   tsconfig.json
+#	modified:   tslint.json
+o
