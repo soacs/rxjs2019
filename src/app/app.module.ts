@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 
 import { AppComponent } from './components/application/app.component';
 import { SubjectsComponent } from './components/subjects/subjects.component';
@@ -44,7 +45,13 @@ import { ErrorhandlingComponent } from './components/errorhandling/errorhandling
     ErrorhandlingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    LoggerModule.forRoot({
+      serverLoggingUrl: '/api/logs',
+      level: NgxLoggerLevel.TRACE,
+      serverLogLevel: NgxLoggerLevel.ERROR,
+      disableConsoleLogging: false
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

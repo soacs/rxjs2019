@@ -1,14 +1,11 @@
 div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around  !important;
+  justify-content: space-around !important;
   justify-items: center;
-  justify-content: center;
   align-items: center;
   background: lightblue;
   height: 400px;
-  font-style: normal;
-  font-family: Arial, serif;
 }
 
 div #block1 {
@@ -25,10 +22,9 @@ div #block2 {
 
 div #block3 {
   background-color: lightgreen;
-  width: 400px;
   height: 160px;
+  width: 400px;
 }
-
 
 button {
   padding: 4px;
@@ -38,3 +34,4 @@ span {
   padding: 4px;
   width: 300px;
 }
+
