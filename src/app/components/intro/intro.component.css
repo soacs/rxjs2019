@@ -6,7 +6,7 @@ div {
   justify-content: center;
   align-items: center;
   background: lightblue;
-  height: 500px;
+  height: 400px;
   font-style: normal;
   font-family: Arial, serif;
 }
@@ -14,19 +14,19 @@ div {
 div #block1 {
   background-color: lightsalmon;
   width: 400px;
-  height: 200px;
+  height: 160px;
 }
 
 div #block2 {
   background-color: lightpink;
-  height: 200px;
+  height: 160px;
   width: 400px;
 }
 
 div #block3 {
   background-color: lightgreen;
   width: 400px;
-  height: 200px;
+  height: 160px;
 }
 
 

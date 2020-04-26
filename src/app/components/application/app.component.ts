@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Observable, Subscription } from 'rxjs';
+import {Component, OnInit, OnDestroy} from '@angular/core';
+import {Observable, Subscription} from 'rxjs';
 import * as Rx from 'rxjs';
 
 @Component({
@@ -13,22 +13,21 @@ export class AppComponent implements OnInit, OnDestroy {
   subscription: Subscription;
 
   constructor() {
-    /* console.log('ENTER AppComponent Constructor');
-   this.observable = Rx.Observable.create(function (observer) {
-    observer.next(1);
-    observer.next(2);
-    observer.next(3);
-    setTimeout(() => {
-      observer.next(4);
-      observer.complete();
-    }, 1000);
-  });
+    console.log('ENTER AppComponent Constructor');
+    this.observable = Rx.Observable.create(function (observer) {
+      observer.next(1);
+      observer.next(2);
+      observer.next(3);
+      setTimeout(() => {
+        observer.next(4);
+        observer.complete();
+      }, 1000);
+    });
     console.log('EXIT AppComponent Constructor');
-    */
   }
 
   ngOnInit() {
-  /*  console.log('ENTER AppComponent ngOnInit');
+    console.log('ENTER AppComponent ngOnInit()');
     console.log('just before subscribe');
     this.subscription = this.observable.subscribe({
       next: x => console.log('got value ' + x),
@@ -37,11 +36,10 @@ export class AppComponent implements OnInit, OnDestroy {
     });
     console.log('just after subscribe');
     console.log('EXIT AppComponent ngOnInit');
-    */
-
   }
 
   ngOnDestroy() {
+    console.log('ENTER AppComponent ngOnDestroy()');
     this.subscription.unsubscribe();
   }
 }

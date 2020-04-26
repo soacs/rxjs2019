@@ -3,7 +3,7 @@
   <div id="block1">
     <button (click)="values()">Show Values</button>
     <span> Mouse Click - <i>event.clientX</i></span>
-    <span> values: {{ obs | async}} </span>
+    <span> Accumulated x position values: {{ obs | async}} </span>
   </div>
   <div id="block2">
     <button (click)="purity()">Show Purity</button>
@@ -15,5 +15,4 @@
     <span> Throttle clicks for 5 seconds:</span>
     <span> count: {{ flowCount | async}} </span>
   </div>
-
 </div>

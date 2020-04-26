@@ -8,22 +8,22 @@ import {mapTo, map, scan, throttleTime, tap} from 'rxjs/operators';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit, OnDestroy {
-obs: Observable<number>;
-count: Observable<number>;
-flowCount: Observable<number>;
+  obs: Observable<number>;
+  count: Observable<number>;
+  flowCount: Observable<number>;
 
   constructor() {
   }
 
   ngOnInit() {
-    console.log('ngOnInit() - Invoked');
+    console.log('ENTER IntroComponent ngOnInit()');
     this.values();
     this.purity();
     this.flow();
   }
 
   ngOnDestroy() {
-    console.log('ngOnDestroy() - Invoked');
+    console.log('ENTER IntroComponent ngOnDestroy()');
   }
 
   values() {
