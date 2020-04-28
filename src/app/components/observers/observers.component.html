@@ -1,3 +1,19 @@
-<div>
-  observers works!
+<<div>
+  <h1>Introduction to Observers</h1>
+  <div id="row1">
+    <button (click)="executeObserver1()">Show Stream</button> <button (click)="clearObserver1()">Clear Observer1 Values</button>
+  </div>
+  <div id="block1">
+    <span>Show Observer1 Stream Values:</span>
+    <span *ngFor="let item of myArray1; let i = index"> {{ myArray1[i] }} </span>
+  </div>
+  <div id="row2">
+    <button (click)="executeObserver2()">Show Stream</button> <button (click)="clearObserver2()">Clear Observer2 Values</button>
+  </div>
+  <div id="block2">
+    <span>Show Observer2 Stream Values:</span>
+    <span *ngFor="let item of myArray2; let i = index"> {{ myArray2[i] }} </span>
+  </div>
+  <br><br>
 </div>
+

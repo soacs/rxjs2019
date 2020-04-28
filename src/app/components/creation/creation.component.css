@@ -1,11 +1,55 @@
 div {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around !important;
   justify-items: center;
-  justify-content: center;
   align-items: center;
-  background: lightpink;
-  height: 50px;
-  font-style: normal;
-  font-family: Arial;
+  background: lightblue;
+  height: 400px;
 }
+
+div #row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between!important;
+  justify-items: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+
+}
+
+div #block1 {
+  background-color: peachpuff;
+  width: 400px;
+  height: 300px;
+}
+
+div #block2 {
+  background-color: lightpink;
+  height: 100px;
+  width: 400px;
+}
+
+div #block3 {
+  background-color: lightgreen;
+  height: 100px;
+  width: 400px;
+}
+
+div #block4 {
+  background-color: mediumturquoise;
+  height: 100px;
+  width: 400px;
+}
+
+
+button {
+  padding: 4px;
+}
+
+span {
+  padding: 4px;
+  width: 300px;
+}
+

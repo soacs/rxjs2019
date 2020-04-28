@@ -1,3 +1,25 @@
-<div>
-  creation works!
+<<div>
+  <h1>Introduction to Observers</h1>
+  <div id="row1">
+    <button (click)="repeats()">Repeats</button>
+    <button (click)="timer()">Timer</button>
+    <button (click)="retries()">Retries</button>
+    <button (click)="defer()">Defer</button>
+    <button (click)="empty()">Empty</button>
+    <button (click)="errors()">Errors</button>
+  </div>
+  <div id="block1">
+    <span>repeatedPrimes: {{ repeatedPrimes | async }}</span>
+  </div>
+  <div id="block2">
+    <span>numbers1: {{ numbers1 | async }}</span>
+    <span>numbers2: {{ numbers2 | async }}</span>
+  </div>
+  <div id="block3">
+    <span>retryEvens: {{ retryEvens | async }}</span>
+  </div>
+  <div id="block4">
+    <span>clicksOrInterval: {{ clicksOrInterval | async }}</span>
+  </div>
+  <br><br>
 </div>

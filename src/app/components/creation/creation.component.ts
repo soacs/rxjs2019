@@ -10,6 +10,11 @@ import * as Rx from 'rxjs';
   styleUrls: ['./creation.component.css']
 })
 export class CreationComponent implements OnInit {
+  repeatedPrimes: Observable<number>;
+  numbers1: Observable<number>;
+  numbers2: Observable<number>;
+  retryEvens: Observable<number>;
+  clicksOrInterval: Observable<string>;
 
   constructor() { }
 
@@ -61,36 +66,35 @@ export class CreationComponent implements OnInit {
   }
 
   timer() {
-    const numbers1 = timer(2000, 500);
-    const subscription = numbers1.subscribe(x => console.log('numbers1: ' + x));
+    this.numbers1 = timer(2000, 500);
+    const subscription = this.numbers1.subscribe(x => console.log('numbers1: ' + x));
     setTimeout(() => subscription.unsubscribe(), 5000);
-
-    const numbers2 = timer(1000, 500);
-    const subscription2 = numbers2.subscribe(x => console.log('numbers2; ' + x));
+    this.numbers2 = timer(1000, 500);
+    const subscription2 = this.numbers2.subscribe(x => console.log('numbers2; ' + x));
     setTimeout(() => subscription2.unsubscribe(), 15000);
 
   }
 
   repeats() {
     const primes = of(3, 5, 7, 13);
-    const repeatedPrimes = primes.pipe(repeat(2));
-    repeatedPrimes.subscribe(x => console.log('repeated primes: ' + x), (err) => console.log(err), () => console.log('complete'));
+    this.repeatedPrimes = primes.pipe(repeat(2));
+    this.repeatedPrimes.subscribe(x => console.log('repeated primes: ' + x), (err) => console.log(err), () => console.log('complete'));
   }
 
   retries() {
     const evens = of(2, 4, 6, 8);
-    const retryEvens = evens.pipe(retry(3));
-    retryEvens.subscribe(x => console.log('retryEvens: ' + x));
+    this.retryEvens = evens.pipe(retry(3));
+    this.retryEvens.subscribe(x => console.log('retryEvens: ' + x));
   }
 
   defer() {
-    const clicksOrInterval = defer(function (): Observable<any> {
+    this.clicksOrInterval = defer(function (): Observable<any> {
       return Math.random() > 0.7
         ? fromEvent(document, 'click')
         : interval(1000);
     });
 
-    clicksOrInterval.subscribe(x => console.log('defered: x = ' + x));
+    this.clicksOrInterval.subscribe(x => console.log('defered: x = ' + x));
     // clicksOrInterval.subscribe(x => console.log('defered: x = ' + x.clientX + ' y = ' + x.clientY));
   }
 

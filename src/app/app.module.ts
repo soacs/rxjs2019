@@ -21,6 +21,7 @@ import { ConditionalsComponent } from './components/conditionals/conditionals.co
 import { CombinationsComponent } from './components/combinations/combinations.component';
 import { MathematicalComponent } from './components/mathematical/mathematical.component';
 import { ErrorhandlingComponent } from './components/errorhandling/errorhandling.component';
+import { ObservablesComponent } from './components/observables/observables.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ErrorhandlingComponent } from './components/errorhandling/errorhandling
     ConditionalsComponent,
     CombinationsComponent,
     MathematicalComponent,
-    ErrorhandlingComponent
+    ErrorhandlingComponent,
+    ObservablesComponent
   ],
   imports: [
     BrowserModule,
