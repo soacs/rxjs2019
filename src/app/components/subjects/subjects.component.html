@@ -1,3 +1,16 @@
-<p>
-  subjects works!
-</p>
+<<div>
+  <h1>Introduction to Observers</h1>
+  <div id="row1">
+    <button (click)="executeSimple()">Execute Behavior Subject</button><button (click)="clear()">Clear Arrays</button>
+  </div>
+  <div id="block1">
+    <span>Subscriber A :</span>
+    <span *ngFor="let item of subscriberAArray; let i = index"> {{ subscriberAArray[i] }} </span>
+  </div>
+  <div id="block2">
+    <span>Subscriber B :</span>
+    <span *ngFor="let item of subscriberBArray; let i = index"> {{ subscriberBArray[i] }} </span>
+  </div>
+  <br><br>
+</div>
+

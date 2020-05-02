@@ -13,17 +13,18 @@ import * as Rx from 'rxjs';
 export class UtilityComponent implements OnInit {
 
   letters: Observable<any>;
-  upperCase: Observable<any>;
+  upperCase: Observable<Array<string>>;
+  materializedValue: string;
 
   constructor() {
     console.log('ENTER UtilityComponent Constructor');
-    this.letters = of('a', 'b', 14, 'd');
-    this.upperCase = this.letters.pipe(map(x => x.toUpperCase()));
     console.log('EXIT UtilityComponent Constructtor');
   }
 
   ngOnInit() {
     console.log('ENTER UtilityComponent ngOnInit()');
+    this.letters = of('a', 'b', 14, 'd');
+    this.upperCase = this.letters.pipe(map(x => x.toUpperCase()));
     this.materialize();
     console.log('EXIT UtilityComponent ngOnInit()');
   }
@@ -31,7 +32,10 @@ export class UtilityComponent implements OnInit {
   materialize() {
     console.log('ENTER materialize()');
     const materialized = this.upperCase.pipe(materialize());
-    materialized.subscribe(x => console.log('Materialized: ' + JSON.stringify(x)));
+    materialized.subscribe(x => {
+      this.materializedValue = JSON.stringify(x);
+      console.log('Materialized: ' + JSON.stringify(x));
+    });
     console.log('EXIT materialize()');
 
   }
