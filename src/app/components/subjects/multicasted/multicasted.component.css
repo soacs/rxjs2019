@@ -1,0 +1,16 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 290px;
+  background: plum;
+  margin:20px;
+}
+
+span {
+  font-family: Arial;
+  font-size: large;
+  height: 25px;
+}
+

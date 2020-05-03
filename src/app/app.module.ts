@@ -4,14 +4,16 @@ import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 
 import { AppComponent } from './components/application/app.component';
 import { SubjectsComponent } from './components/subjects/subjects.component';
+import { SubjectComponent } from './components/subjects/subject/subject.component';
 import { OperatorsComponent } from './components/operators/operators.component';
 import { SchedulerComponent } from './components/scheduler/scheduler.component';
-import { BehaviorComponent } from './components/behavior/behavior.component';
-import { AsyncComponent } from './components/async/async.component';
-import { ReplayComponent } from './components/replay/replay.component';
+import { BehaviorsComponent } from './components/subjects/behaviors/behaviors.component';
+import { AsyncComponent } from './components/subjects/async/async.component';
+import { ReplayComponent } from './components/subjects/replay/replay.component';
 import { ObserversComponent } from './components/observers/observers.component';
 import { CompletionsComponent } from './components/completions/completions.component';
 import { MulticastComponent } from './components/multicast/multicast.component';
+import { MulticastedComponent } from './components/subjects/multicasted/multicasted.component';
 import { UtilityComponent } from './components/utility/utility.component';
 import { CreationComponent } from './components/creation/creation.component';
 import { IntroComponent } from './components/intro/intro.component';
@@ -27,13 +29,15 @@ import { ObservablesComponent } from './components/observables/observables.compo
   declarations: [
     AppComponent,
     SubjectsComponent,
+    SubjectComponent,
     OperatorsComponent,
-    BehaviorComponent,
+    BehaviorsComponent,
     AsyncComponent,
     ReplayComponent,
     ObserversComponent,
     CompletionsComponent,
     MulticastComponent,
+    MulticastedComponent,
     UtilityComponent,
     SchedulerComponent,
     CreationComponent,
