@@ -25,6 +25,9 @@ import { MathematicalComponent } from './components/mathematical/mathematical.co
 import { ErrorhandlingComponent } from './components/errorhandling/errorhandling.component';
 import { ObservablesComponent } from './components/observables/observables.component';
 import { PersonComponent } from './components/filters/person/person.component';
+import { CombineAllComponent } from './components/combinations/combine-all/combine-all.component';
+import { ConcatAllComponent } from './components/combinations/concat-all/concat-all.component';
+import { MergeAllComponent } from './components/combinations/merge-all/merge-all.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,10 @@ import { PersonComponent } from './components/filters/person/person.component';
     MathematicalComponent,
     ErrorhandlingComponent,
     ObservablesComponent,
-    PersonComponent
+    PersonComponent,
+    CombineAllComponent,
+    ConcatAllComponent,
+    MergeAllComponent
   ],
   imports: [
     BrowserModule,
