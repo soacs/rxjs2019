@@ -1,6 +1,6 @@
 
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {Observable, Subscription, of, pipe} from 'rxjs';
+import {Observable, Subscription, of, pipe, fromEvent} from 'rxjs';
 import {filter, map} from 'rxjs/operators';
 
 @Component({
@@ -11,10 +11,11 @@ import {filter, map} from 'rxjs/operators';
 export class FiltersComponent implements OnInit, OnDestroy {
   subscription: Subscription;
   observable: Observable<number>;
+  oddArray: Array<number> = [];
 
   constructor() {
     console.log('ENTER FiltersComponent Constructor');
-    console.log('EXIT FiltersComponent Constructtor');
+    console.log('EXIT FiltersComponent Constructor');
   }
 
   ngOnInit() {
@@ -24,16 +25,24 @@ export class FiltersComponent implements OnInit, OnDestroy {
   }
 
   filterIt() {
-    console.log('ENTER FiltersComponent filterIt');
+    console.log('ENTER filterIt()');
     const nums = of(1, 2, 3, 4, 5);
     const squareOddVals = pipe(filter((n: number) => n % 2 !== 0), map(n => n * n));
     const squareOdd = squareOddVals(nums);
-    this.subscription = squareOdd.subscribe(x => console.log('squareOddVals: ' + x),
+    this.subscription = squareOdd.subscribe(
+      x =>  {console.log('squareOddVals: ' + x);
+      this.oddArray.push(x);
+      },
       (err) => console.log(err),
       () => console.log('complete'));
-    console.log('ENTER FiltersComponent filterIt');
+    console.log('EXIT filterIt()');
   }
 
+
+
   ngOnDestroy() {
+    console.log('ENTER FiltersComponent ngOnDestroy');
+    this.subscription.unsubscribe();
+    console.log('EXIT FiltersComponent ngOnDestroy');
   }
 }

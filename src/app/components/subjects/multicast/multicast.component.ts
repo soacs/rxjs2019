@@ -9,6 +9,9 @@ import { take, tap, multicast, mapTo } from 'rxjs/operators';
 })
 export class MulticastComponent implements OnInit {
 
+  multiOneArray: Array<string> = [];
+  multiTwoArray: Array<string> = [];
+
   constructor() {
     console.log('ENTER MulticastComponent Constrcutor');
     console.log('EXIT MulticastComponent Constrcutor');
@@ -19,14 +22,21 @@ export class MulticastComponent implements OnInit {
     const example = source.pipe(
       // since we are multicasting below, side effects will be executed once
       tap((x) => console.log('Side Effect: ' + x)),
-      mapTo('Result!')
+      mapTo('Results! ')
     );
 
     // subscribe subject to source upon connect()
     const multi = example.pipe(multicast(() => new Subject())) as ConnectableObservable<any>;
     /* subscribers will share source output */
-    const subscriberOne = multi.subscribe(val => console.log('multiOne: ' + val));
-    const subscriberTwo = multi.subscribe(val => console.log('multiTwo: ' + val));
+    const subscriberOne = multi.subscribe(val => {
+      console.log('multiOne: ' + val);
+        this.multiOneArray.push(' multiOne: ' + val);
+    }
+    );
+    const subscriberTwo = multi.subscribe(val => {
+      console.log('multiTwo: ' + val);
+      this.multiTwoArray.push(' multiTwo: ' + val);
+    });
     // subscribe subject to source
      multi.connect();
   }

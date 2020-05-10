@@ -12,7 +12,7 @@ import { AsyncComponent } from './components/subjects/async/async.component';
 import { ReplayComponent } from './components/subjects/replay/replay.component';
 import { ObserversComponent } from './components/observers/observers.component';
 import { CompletionsComponent } from './components/completions/completions.component';
-import { MulticastComponent } from './components/multicast/multicast.component';
+import { MulticastComponent } from './components/subjects/multicast/multicast.component';
 import { MulticastedComponent } from './components/subjects/multicasted/multicasted.component';
 import { UtilityComponent } from './components/utility/utility.component';
 import { CreationComponent } from './components/creation/creation.component';
@@ -24,6 +24,7 @@ import { CombinationsComponent } from './components/combinations/combinations.co
 import { MathematicalComponent } from './components/mathematical/mathematical.component';
 import { ErrorhandlingComponent } from './components/errorhandling/errorhandling.component';
 import { ObservablesComponent } from './components/observables/observables.component';
+import { PersonComponent } from './components/filters/person/person.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ObservablesComponent } from './components/observables/observables.compo
     CombinationsComponent,
     MathematicalComponent,
     ErrorhandlingComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,

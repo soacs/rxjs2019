@@ -1,12 +1,16 @@
+
 div {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: space-around;
-  justify-items: center;
-  justify-content: center;
   align-items: center;
+  height: 290px;
   background: plum;
-  height: 100px;
-  font-style: normal;
+  margin:20px;
+}
+
+span {
   font-family: Arial;
+  font-size: large;
+  height: 25px;
 }
