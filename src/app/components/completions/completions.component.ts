@@ -12,6 +12,7 @@ export class CompletionsComponent implements OnInit, OnDestroy {
   title = 'RxJS Demo';
   observable: Observable<number>;
   subscription: Subscription;
+  progressArray: Array<string> = [];
 
   constructor() {
     console.log('ENTER CompletionsComponent Constructor');
@@ -31,16 +32,22 @@ export class CompletionsComponent implements OnInit, OnDestroy {
   ngOnInit() {
     console.log('ENTER CompletionsComponent ngOnInit');
     console.log('just before subscribe');
+    this.progressArray.push('Subscribing now');
     this.subscription = this.observable.subscribe({
-      next: x => console.log('got value ' + x),
+      next: x => {console.log('got value ' + x);
+        this.progressArray.push('got value ' + x); },
       error: err => console.error('something wrong occurred: ' + err),
-      complete: () => console.log('done'),
+      complete: () => {console.log('done');
+        this.progressArray.push('Done with Subscription');
+      },
     });
+    this.progressArray.push('Just after subscribe');
     console.log('just after subscribe');
     console.log('EXIT CompletionsComponent ngOnInit');
   }
 
   ngOnDestroy() {
+    this.progressArray.push('Unsubscribing now');
     this.subscription.unsubscribe();
   }
 

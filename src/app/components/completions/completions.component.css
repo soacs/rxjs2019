@@ -1,11 +1,13 @@
 div {
   display: flex;
+  flex-flow: column;
   justify-content: space-around;
   justify-items: center;
   justify-content: center;
   align-items: center;
-  background: lightgrey;
-  height: 50px;
+  background: yellow;
+  height: 180px;
   font-style: normal;
-  font-family: Arial;
+  padding-top: 20px;
+  font-family: Arial, serif;
 }
