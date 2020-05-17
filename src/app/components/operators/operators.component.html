@@ -1,3 +1,47 @@
 <div>
-  operators works!
+  <h1>Introduction to Combine Operators</h1>
+  <div id="block1">
+    <span>Combine Values:</span>
+    <span *ngFor="let item of combineItArray; let i = index"> {{ combineItArray[i] | json}} </span>
+  </div>
+  <br><br>
+
+  <div id="block2">
+    <span>Merge Values:</span>
+    <span *ngFor="let item of mergeItArray; let i = index"> {{ mergeItArray[i] | json}} </span>
+  </div>
+  <br><br>
+
+  <div id="block3">
+    <span>Filter Values:</span>
+    <span *ngFor="let item of filterItArray; let i = index"> {{ filterItArray[i] | json}} </span>
+  </div>
+  <br><br>
+
+  <div id="block4">
+    <span>Error Values:</span>
+    <span *ngFor="let item of errorItArray; let i = index"> {{ errorItArray[i] | json}} </span>
+  </div>
+  <br><br>
+
+  <div id="block5">
+    <span>Scan Values:</span>
+    <span *ngFor="let item of scanItArray; let i = index"> {{ scanItArray[i] | json}} </span>
+  </div>
+  <br><br>
+
+
+  <div id="block6">
+    <span>Pluck Values:</span>
+    <span *ngFor="let item of pluckItArray; let i = index"> {{ pluckItArray[i] | json}} </span>
+  </div>
+  <br><br>
+
+
+  <div id="block7">
+    <span>Window Values:</span>
+    <span *ngFor="let item of windowItArray; let i = index"> {{ windowItArray[i] | json}} </span>
+  </div>
+  <br><br>
+
 </div>
